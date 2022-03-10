@@ -1,12 +1,10 @@
-package com.dzakyhdr.gojekui
+package com.valentine.gojekui
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import com.dzakyhdr.gojekui.data.MenuAdapter
-import com.dzakyhdr.gojekui.data.menu.MenuObject
-import com.dzakyhdr.gojekui.databinding.ActivityMainBinding
+import com.valentine.gojekui.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,11 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.toolbar.setTitle(getString(R.string.app_name))
         binding.toolbar.setTitleTextColor(Color.WHITE)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-//        val adapter = MenuAdapter()
-//        adapter.setData(MenuObject.list)
-//        binding.rvMenu.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.HORIZONTAL, false)
-//        binding.rvMenu.adapter = adapter
-//        binding.rvMenu.setHasFixedSize(true)
     }
 }
