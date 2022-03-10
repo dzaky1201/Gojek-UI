@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         binding.toolbar.setTitle(getString(R.string.app_name))
         binding.toolbar.setTitleTextColor(Color.WHITE)
 
-        val adapter = MenuAdapter()
-        adapter.setData(MenuObject.list)
-        binding.rvMenu.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.HORIZONTAL, false)
-        binding.rvMenu.adapter = adapter
-        binding.rvMenu.setHasFixedSize(true)
+//        val adapter = MenuAdapter()
+//        adapter.setData(MenuObject.list)
+//        binding.rvMenu.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.HORIZONTAL, false)
+//        binding.rvMenu.adapter = adapter
+//        binding.rvMenu.setHasFixedSize(true)
     }
 }
